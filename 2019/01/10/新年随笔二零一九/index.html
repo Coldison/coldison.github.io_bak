@@ -17,7 +17,7 @@
   <meta name="description" content="A blog site of Coldison">
   <meta name="author" content="Coldison">
   <meta name="keywords" content="">
-  <title>Hexo的安装及使用 - 凉快Coldison</title>
+  <title>新年随笔二零一九 - 凉快Coldison</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -169,12 +169,12 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/img/grey.png') no-repeat center center;
+         style="background: url('https://bn1305files.storage.live.com/y4mpyBQ3r7Gy7-vHs0ddnDKnAJkRRpIZWSmVkCY88GNRmcwZE78Ghmq7P8oPD7yzbC5x91Jq0dU8KlOCkQCae-Ok_HWDgGk_HCwgYJlc8nyBCKVPL9ixWoXSRI5Twqpyj_S2vSpYy-qUcIkRVURX-ygiqA2bLSLp0_oKF-5SC2canrtEm1R-KM-ck2fJobDKTrs?width=2736&height=2189&cropmode=none') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Hexo的安装及使用">
+            <span class="h2" id="subtitle" title="新年随笔二零一九">
               
             </span>
 
@@ -184,8 +184,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-02-07 11:45" pubdate>
-        2021年2月7日 中午
+      <time datetime="2019-01-10 15:46" pubdate>
+        2019年1月10日 下午
       </time>
     </span>
   
@@ -196,7 +196,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      430 字
+      1.3k 字
     </span>
   
 
@@ -206,7 +206,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5
+      12
        分钟
     </span>
   
@@ -236,7 +236,7 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Hexo的安装及使用</h1>
+            <h1 style="display: none">新年随笔二零一九</h1>
             
               <p class="note note-info">
                 
@@ -245,25 +245,16 @@
               </p>
             
             <div class="markdown-body">
-              <p>本文主要介绍一下Hexo的安装与使用流程，以免自己忘记。</p>
+              <p>往往有一种错觉，旧历年还没有过去，新历年已经来临的这段日子，仿佛每一天都是节日。好像是汽车的轮子也打着漂，即使是特别沉稳的人，也会在心里面默默盘算，要去哪里玩，什么样的衣服鞋子，什么样的大菜，乳猪哼哼唧唧趴在大圆桌子上，红透的大虾在盘子里面蹦哒。</p>
 <a id="more"></a>
 
-<h3 id="一、Hexo的安装"><a href="#一、Hexo的安装" class="headerlink" title="一、Hexo的安装"></a>一、Hexo的安装</h3><h4 id="1-Hexo的安装"><a href="#1-Hexo的安装" class="headerlink" title="1. Hexo的安装"></a>1. Hexo的安装</h4><p>需要先安装nodejs以及git。</p>
-<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">npm install -g hexo-cli<br></code></pre></div></td></tr></table></figure>
-<h4 id="2-Hexo的初始化"><a href="#2-Hexo的初始化" class="headerlink" title="2. Hexo的初始化"></a>2. Hexo的初始化</h4><p>Hexo安装完成后，在指定文件夹下初始化。</p>
-<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo init &lt;folder&gt;<br><span class="hljs-built_in">cd</span> &lt;folder&gt;<br>npm install<br></code></pre></div></td></tr></table></figure>
-<p>_config.yml下有网站的配置信息，可以在此配置大部分参数。具体配置及相关文档参见：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo文档</a></p>
-<p>在github上创建名为<code>username.github.io</code>的仓库，在_config.yml文件的deploy部分配置自己的git仓库地址，将分支改为master。</p>
-<figure class="highlight yaml"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs yaml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">https://github.com/Coldison/coldison.github.io.git</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">master</span><br></code></pre></div></td></tr></table></figure>
-<h3 id="二、Fluid主题配置"><a href="#二、Fluid主题配置" class="headerlink" title="二、Fluid主题配置"></a>二、Fluid主题配置</h3><p>我选择的是fluid主题，参见<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/start/#%E4%B8%BB%E9%A2%98%E7%AE%80%E4%BB%8B">Fluid 主题文档</a>。</p>
-<p>将Fluid主题文件解压，放到themes目录下并且改名fluid。在<code>_config.yml</code>中将theme改为fluid。然后将fluid文件夹下的 <code>_config.yml</code>改名为<code>_config.fluid.yml</code>，复制到<code>_config.yml</code>同级文件夹。然后就可以在<code>_config.fluid.yml</code>修改相应的style了。</p>
-<p>主要是修改配色，链接以及文本。我选择了偏灰的颜色，超链接是紫色系，具体可以自己修改。</p>
-<h3 id="三、Hexo命令"><a href="#三、Hexo命令" class="headerlink" title="三、Hexo命令"></a>三、Hexo命令</h3><p>写作：</p>
-<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo new [layout] &lt;title&gt;<br></code></pre></div></td></tr></table></figure>
-<p>主要有post，page，draft三种，路径都是source。</p>
-<p>也可以自己创建模板。</p>
-<p>常用命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">hexo g <span class="hljs-comment">#完整命令为hexo generate,用于生成静态文件</span><br>hexo s <span class="hljs-comment">#完整命令为hexo server,用于启动服务器，主要用来本地预览</span><br>hexo d <span class="hljs-comment">#完整命令为hexo deploy,用于将本地文件发布到github上</span><br>hexo n <span class="hljs-comment">#完整命令为hexo new,用于新建一篇文章</span><br>hexo g -d <span class="hljs-comment">#两个命令的合成，一般在修改或者添加博文后直接使用这个命令</span><br></code></pre></div></td></tr></table></figure>
+<p>倘若是旧时，我还在我们的村子占地为王的时候，我们一行人便会早早起床，趁着阳光没有那么强烈，小水库里面的冰还没有被朝阳触动的时候去砸冰。</p>
+<p>早晨的空气冷冽，软湿的泥土结了冰，踩上去咔嚓咔嚓脆生生弄不脏鞋，路边的又灰又黄枯草也打了霜，白色的冰晶装饰着叶的边缘好像是愈发憔悴，好像是什么八大山人的怪石枯草。已经是冬月，已经是枯水期，黝黑的河床露出来，将水面分成一块一块，水面结的冰打着褶皱，在阳光下面闪闪发光。淤泥也仿佛硬气起来，我们蹑手蹑脚踩上去，挪到水边上，用红色的砂岩小石头去砸碎这面鱼虾的玻璃窗。透明的冰面被砸出洞来，被砸出裂缝，空气透进去，在冰下形成白色的气泡，叫人又有去砸碎的欲望。石子在冰面上滑行发出刺啦刺啦的啸声，我们比着谁的石头扔的远，河床上的石子瓦片扔完，就用碎冰。一厘米左右的冰片在冰面上喀拉碎成小块，每一片在又如水晶一般闪着光辉。喀拉喀拉喀拉，近处的冰也被我们扔完，冰面上一片狼藉，但是我们还不肯罢休。有带擦炮的，点燃一根，专门扔到冰窟窿里面去，等上三五秒，在水底闷地一声，乳白色的气泡冒上来，又被锁在冰面下，形成一个个奇形怪状的乳白色的空腔，久久也不能散去。</p>
+<p>等到太阳又高一点，有妇人出来洗衣服，渔人穿上半身的塑胶衣服下水捞鱼，冰面被我们蹂躏得差不多，河床上的淤泥差不多也开始软趴趴的时候，我们便飞也似的逃窜，顺便捡上一两片蚌壳，等着明天再来这里逞威风……</p>
+<p>这些差不多已经是十年前的光景，许多个日子团成一团，开始怀念的时候，也正如杜拉斯所说，记忆中只有广阔的场景，此处到彼处，光暗如何，冷暖几分，音容笑貌抽象成几个形容词，仿佛再也没有正眼瞧过他们的被冷风吹的红通通的脸，对话也都失去色彩。像是别处再起的楼阁，虚构出形制，草拟出蓝图，再把过去的自己安放其间。</p>
+<p>沉湎于过去当然是极极愚蠢的行为，更何况这些旧人早已作鸟兽散，也听说过各种变故，有过得凄凄惨惨戚戚，有的业已成家，分道扬镳的时间比印象中的要早得多，结局当然也坏得多。之所以谈起这些，无非是时间的滤镜居然抹平了那些残破的记忆，在这流落的时候熠熠生辉起来。然后违心地去想，倘若再来一回，一定要记得所有人的样子，即刻就在心里编下这种种故事，记在日记里，省得这些事情萦绕起来，好像是某种温情，叫人失神。</p>
+<p>辞旧迎新的时节，再谈这些总也不合时宜，总得也作些总结汇报，新年展望，把自己拾掇得像一个人，假模假样地胸前口袋夹着笔，拿着一张表，来来回回边踱步边打个分数。但也正因为难以下笔，所以才想到过去的平凡岁月，那些阳光灿烂的日子，何以逐渐模糊，被时间一一剪切归档，收藏在某个小小角落，然后又将这些素材拿出来，重新拼接剪辑，变成温情故事。然而往者终究不可谏，好像是我爱我家，梁左也已经去世了，京城中流传的早已经不是大院子弟的故事，甚至青春朋克都已经成为历史，命运的转轮不停地旋转，已经2019年了。</p>
+<p>过去的一年，我撞过了每一堵我可能要撞的高墙，摔落了每一道我可能要落进的沟壑，口袋里的扑克牌一一散落，我的朋友在前面驻扎，而我也并不觉得风阻会减小一些。2019，无非也还是一日一日的日常，一日一日，我们假装严肃生活，只等时间裁剪片段，打磨上色，算是为未来保留温情。</p>
 
             </div>
             <hr>
@@ -273,9 +264,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
-                    
-                      <a class="hover-with-bg" href="/categories/%E6%95%99%E7%A8%8B/%E5%8D%9A%E5%AE%A2%E8%AE%BE%E7%BD%AE/">博客设置</a>
+                      <a class="hover-with-bg" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
                     
                   </div>
                 
@@ -283,9 +272,9 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/Hexo/">Hexo</a>
+                      <a class="hover-with-bg" href="/tags/%E6%96%B0%E5%B9%B4/">新年</a>
                     
-                      <a class="hover-with-bg" href="/tags/fluid/">fluid</a>
+                      <a class="hover-with-bg" href="/tags/2019/">2019</a>
                     
                   </div>
                 
@@ -298,21 +287,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/02/07/%E5%8B%83%E5%AD%A6%EF%BC%9A%E6%88%90%E5%8A%9F%E4%BA%BA%E5%A3%AB%E7%9A%84%E6%9C%80%E5%90%8E%E4%B8%80%E6%AC%A1%E5%A4%B1%E8%B4%A5/">
+                      <a href="/2021/02/07/Hexo%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E4%BD%BF%E7%94%A8/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">勃学：成功人士的最后一次失败</span>
+                        <span class="hidden-mobile">Hexo的安装及使用</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/2019/01/10/%E6%96%B0%E5%B9%B4%E9%9A%8F%E7%AC%94%E4%BA%8C%E9%9B%B6%E4%B8%80%E4%B9%9D/">
-                        <span class="hidden-mobile">新年随笔二零一九</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>
