@@ -196,7 +196,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      689 字
+      694 字
     </span>
   
 
@@ -260,9 +260,9 @@
 <ul>
 <li><p>name or flags用于识别参数选项，其中有-或者–前缀的是可选命令，如果不加前缀则是位置参数（positional argument) 如运行需要的文件名。</p>
 <figure class="highlight python-repl"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs python-repl"><span class="hljs-meta">&gt;&gt;&gt;</span> <span class="python">parser = argparse.ArgumentParser(prog=<span class="hljs-string">&#x27;PROG&#x27;</span>)</span><br><span class="hljs-meta">&gt;&gt;&gt;</span> <span class="python">parser.add_argument(<span class="hljs-string">&#x27;-f&#x27;</span>, <span class="hljs-string">&#x27;--foo&#x27;</span>)</span><br><span class="hljs-meta">&gt;&gt;&gt;</span> <span class="python">parser.add_argument(<span class="hljs-string">&#x27;bar&#x27;</span>)</span><br><span class="hljs-meta">&gt;&gt;&gt;</span> <span class="python">parser.parse_args([<span class="hljs-string">&#x27;BAR&#x27;</span>])</span><br>Namespace(bar=&#x27;BAR&#x27;, foo=None)<br><span class="hljs-meta">&gt;&gt;&gt;</span> <span class="python">parser.parse_args([<span class="hljs-string">&#x27;BAR&#x27;</span>, <span class="hljs-string">&#x27;--foo&#x27;</span>, <span class="hljs-string">&#x27;FOO&#x27;</span>])</span><br>Namespace(bar=&#x27;BAR&#x27;, foo=&#x27;FOO&#x27;)<br><span class="hljs-meta">&gt;&gt;&gt;</span> <span class="python">parser.parse_args([<span class="hljs-string">&#x27;--foo&#x27;</span>, <span class="hljs-string">&#x27;FOO&#x27;</span>])</span><br>usage: PROG [-h] [-f FOO] bar<br>PROG: error: the following arguments are required: bar<br></code></pre></div></td></tr></table></figure></li>
-<li><p>action是指接受参数之后要执行的动作，通常是<code>store_false</code>，<code>store_true</code>或者<code>store_const</code>，不需要接受其余参数，直接将对应的选项变量保存为特定的值。这是使用得比较多的选项。<code>append</code>是一个特殊的action，它会将参数追加到列表中。<code>count</code>是一个特殊的action，它会将参数计数，并将计数值保存到变量中。</p>
+<li><p>action是指接受参数之后要执行的动作，通常是 <code>store_false</code>，<code>store_true</code>或者 <code>store_const</code>，不需要接受其余参数，直接将对应的选项变量保存为特定的值。这是使用得比较多的选项。<code>append</code>是一个特殊的action，它会将参数追加到列表中。<code>count</code>是一个特殊的action，它会将参数计数，并将计数值保存到变量中。</p>
 </li>
-<li><p>其他还有一些方法这里就不再赘述了，具体使用的时候可以参考。</p>
+<li><p>其他还有一些方法这里就不再赘述了，具体使用的时候可以参考官方文档。</p>
 </li>
 </ul>
 </li>
