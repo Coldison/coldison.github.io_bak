@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>ffmpeg使用(未完)</title>
+    <link href="/2022/07/18/ffmpeg%E4%BD%BF%E7%94%A8/"/>
+    <url>/2022/07/18/ffmpeg%E4%BD%BF%E7%94%A8/</url>
+    
+    <content type="html"><![CDATA[<p>一直想建立一个视频搬运的工作流，比如在b站上看到什么视频了，复制下链接，然后自动抓取转码和上传到推特或者油管，推特机器人账号需要自己有服务器，所以再议。<br>本文主要是收集一些ffmpeg的使用，视频剪辑软件对于我的需求来说太重了。比如我可能需要的是剪切，转码，音频提取（接翻译接口），字幕生成之类的，这些事情脚本做还是比较方便的。<br>然后因为还是参考别人的博客也没有自己读文档，先在这里记录下地址。</p><h3 id="转码"><a href="#转码" class="headerlink" title="转码"></a>转码</h3><p>先顺便记录一个别人的网页元素提取的方法，因为别人的链接可能会失效，所以试试保存到OneDrive看看会怎么样。</p><iframe src="https://onedrive.live.com/embed?cid=0AF1954C01387B4A&resid=AF1954C01387B4A%21107462&authkey=AEm1m6nXd9ygwPg" width="98" height="120" frameborder="0" scrolling="no"></iframe>]]></content>
+    
+    
+    <categories>
+      
+      <category>教程</category>
+      
+      <category>视频编辑</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>ffmpeg</tag>
+      
+      <tag>视频</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>python编译so和pyd文件</title>
     <link href="/2022/07/18/python%E7%BC%96%E8%AF%91so%E5%92%8Cpyd%E6%96%87%E4%BB%B6/"/>
     <url>/2022/07/18/python%E7%BC%96%E8%AF%91so%E5%92%8Cpyd%E6%96%87%E4%BB%B6/</url>
