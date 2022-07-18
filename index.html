@@ -1,31 +1,47 @@
 
 
 <!DOCTYPE html>
-<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+<html lang="zh-CN" data-default-color-scheme=auto>
 
 
 
 <head>
   <meta charset="UTF-8">
   <link rel="apple-touch-icon" sizes="76x76" href="/img/batman.jpg">
-  <link rel="icon" type="image/png" href="/img/batman.jpg">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <link rel="icon" href="/img/batman.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#474b4c">
-  <meta name="description" content="A blog site of Coldison">
   <meta name="author" content="Coldison">
   <meta name="keywords" content="">
+  
+    <meta name="description" content="A blog site of Coldison">
+<meta property="og:type" content="website">
+<meta property="og:title" content="凉快Coldison">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="凉快Coldison">
+<meta property="og:description" content="A blog site of Coldison">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Coldison">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
   <title>凉快Coldison</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
 
 
-<!-- 主题依赖的图标库，不要自行修改 -->
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
 
 
 
@@ -34,24 +50,46 @@
 
 <link  rel="stylesheet" href="/css/main.css" />
 
-<!-- 自定义样式保持在最底部 -->
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#7e2065","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#7e2065","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
 <meta name="generator" content="Hexo 5.3.0"></head>
 
 
 <body>
-  <header style="height: 100vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand"
-       href="/">&nbsp;<strong>Coldison</strong>&nbsp;</a>
+    <a class="navbar-brand" href="/">
+      <strong>Coldison</strong>
+    </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -137,13 +175,15 @@
         
         
           <li class="nav-item" id="search-btn">
-            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
-                class="iconfont icon-search"></i>&nbsp;</a>
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
           </li>
+          
         
         
           <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" href="javascript:">&nbsp;<i
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
                 class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
           </li>
         
@@ -152,34 +192,40 @@
   </div>
 </nav>
 
-    <div class="banner" id="banner" parallax=true
-         style="background: url('/img/grey.png') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-          <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="欲买桂花同载酒，终不似，少年游。">
-              
-            </span>
+  
 
-            
-          </div>
-
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/grey.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
           
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
+            <span id="subtitle" data-typed-text="欲买桂花同载酒，终不似，少年游。"></span>
           
         </div>
+
+        
       </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
     </div>
+  </div>
+</div>
+
+</div>
+
   </header>
 
   <main>
     
       <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          style=margin-top:0>
+        <div id="board"
+          style="margin-top: 0">
           
           <div class="container">
             <div class="row">
@@ -193,19 +239,17 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/07/18/ffmpeg%E4%BD%BF%E7%94%A8/">ffmpeg使用(未完)</a>
+        <a href="/2022/07/18/ffmpeg%E4%BD%BF%E7%94%A8/" target="_self">
+          ffmpeg使用(未完)
+        </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2022/07/18/ffmpeg%E4%BD%BF%E7%94%A8/">
-          
-          
-            
-          
-          一直想建立一个视频搬运的工作流，比如在b站上看到什么视频了，复制下链接，然后自动抓取转码和上传到推特或者油管，推特机器人账号需要自己有服务器，所以再议。本文主要是收集一些ffmpeg的使用，视频剪辑软件对于我的需求来说太重了。比如我可能需要的是剪切，转码，音频提取（接翻译接口），字幕生成之类的，这些事情脚本做还是比较方便的。然后因为还是参考别人的博客也没有自己读文档，先在这里记录下地址。
-转码先顺
-        </a>
-      </p>
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/07/18/ffmpeg%E4%BD%BF%E7%94%A8/" target="_self">
+        <div>
+          一直想建立一个视频搬运的工作流，比如在b站上看到什么视频了，复制下链接，然后自动抓取转码和上传到推特或者油管，推特机器人账号需要自己有服务器，所以再议。本文主要是收集一些ffmpeg的使用，视频剪辑软件对于我的需求来说太重了。比如我可能需要的是剪切，转码，音频提取（接翻译接口），字幕生成之类的，这些事情脚本做还是比较方便的。然后因为还是参考别人的博客也没有自己读文档，先在这里记录下地址。 转码先顺
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -217,22 +261,41 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
-            
-              <a href="/categories/%E6%95%99%E7%A8%8B/%E8%A7%86%E9%A2%91%E7%BC%96%E8%BE%91/">视频编辑</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%95%99%E7%A8%8B/" class="category-chain-item">教程</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%95%99%E7%A8%8B/%E8%A7%86%E9%A2%91%E7%BC%96%E8%BE%91/" class="category-chain-item">视频编辑</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/ffmpeg/">ffmpeg</a>
+              <a href="/tags/ffmpeg/">#ffmpeg</a>
             
-              <a href="/tags/%E8%A7%86%E9%A2%91/">视频</a>
+              <a href="/tags/%E8%A7%86%E9%A2%91/">#视频</a>
             
           </div>
         
@@ -246,21 +309,17 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/07/18/python%E7%BC%96%E8%AF%91so%E5%92%8Cpyd%E6%96%87%E4%BB%B6/">python编译so和pyd文件</a>
+        <a href="/2022/07/18/python%E7%BC%96%E8%AF%91so%E5%92%8Cpyd%E6%96%87%E4%BB%B6/" target="_self">
+          python编译so和pyd文件
+        </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2022/07/18/python%E7%BC%96%E8%AF%91so%E5%92%8Cpyd%E6%96%87%E4%BB%B6/">
-          
-          
-            
-          
-          python代码即便是编译成pyc也同样可以被反编译，通常为了产品发布跟代码保护，会编译成so(linux)或者pyd(windows)。
-配置主要流程是，先调用Cython包将python代码编译成c代码，再将c代码编译成so文件跟pyd文件。由于使用了gcc，所以需要安装对应的build工具。在windows平台可以通过Visual Studio Installer安装对应的包。
-
-Linux
-        </a>
-      </p>
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/07/18/python%E7%BC%96%E8%AF%91so%E5%92%8Cpyd%E6%96%87%E4%BB%B6/" target="_self">
+        <div>
+          python代码即便是编译成pyc也同样可以被反编译，通常为了产品发布跟代码保护，会编译成so(linux)或者pyd(windows)。 配置主要流程是，先调用Cython包将python代码编译成c代码，再将c代码编译成so文件跟pyd文件。由于使用了gcc，所以需要安装对应的build工具。在windows平台可以通过Visual Studio Installer安装对应的包。  Linux
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -272,26 +331,45 @@ Linux
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
-            
-              <a href="/categories/%E6%95%99%E7%A8%8B/python%E4%BD%BF%E7%94%A8/">python使用</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%95%99%E7%A8%8B/" class="category-chain-item">教程</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%95%99%E7%A8%8B/python%E4%BD%BF%E7%94%A8/" class="category-chain-item">python使用</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/python/">python</a>
+              <a href="/tags/python/">#python</a>
             
-              <a href="/tags/%E7%BC%96%E8%AF%91/">编译</a>
+              <a href="/tags/%E7%BC%96%E8%AF%91/">#编译</a>
             
-              <a href="/tags/so/">so</a>
+              <a href="/tags/so/">#so</a>
             
-              <a href="/tags/pyd/">pyd</a>
+              <a href="/tags/pyd/">#pyd</a>
             
           </div>
         
@@ -305,20 +383,17 @@ Linux
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/07/13/ArgParser%E7%9A%84%E4%BD%BF%E7%94%A8/">ArgParser的使用</a>
+        <a href="/2022/07/13/ArgParser%E7%9A%84%E4%BD%BF%E7%94%A8/" target="_self">
+          ArgParser的使用
+        </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2022/07/13/ArgParser%E7%9A%84%E4%BD%BF%E7%94%A8/">
-          
-          
-            
-          
-          命令行运行Python文件时，可以添加相应的参数。如：
-1python add.py 1 2
-在运行时，from sys import argv就可以读取命令行参数，通常是一个列表，此处的 argv = [add.py, 1, 2]。对于比较复杂的程序，使用这种方式读取命令行参数显然还是比较麻烦的。于是就引入了 argparse模块。具体可以参考官方文档：Parser for command-li
-        </a>
-      </p>
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/07/13/ArgParser%E7%9A%84%E4%BD%BF%E7%94%A8/" target="_self">
+        <div>
+          命令行运行Python文件时，可以添加相应的参数。如： 1python add.py 1 2 在运行时，from sys import argv就可以读取命令行参数，通常是一个列表，此处的 argv &#x3D; [add.py, 1, 2]。对于比较复杂的程序，使用这种方式读取命令行参数显然还是比较麻烦的。于是就引入了 argparse模块。具体可以参考官方文档：Parser for command-li
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -330,22 +405,41 @@ Linux
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
-            
-              <a href="/categories/%E6%95%99%E7%A8%8B/python%E4%BD%BF%E7%94%A8/">python使用</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%95%99%E7%A8%8B/" class="category-chain-item">教程</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%95%99%E7%A8%8B/python%E4%BD%BF%E7%94%A8/" class="category-chain-item">python使用</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/python/">python</a>
+              <a href="/tags/python/">#python</a>
             
-              <a href="/tags/argparse/">argparse</a>
+              <a href="/tags/argparse/">#argparse</a>
             
           </div>
         
@@ -359,23 +453,17 @@ Linux
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/06/24/Docker%E5%AE%89%E8%A3%85%E4%B8%8E%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%93%8D%E4%BD%9C%E4%B8%8E%E9%97%AE%E9%A2%98/">Docker build中的常见错误及常用命令(未完)</a>
+        <a href="/2022/06/24/Docker%E5%AE%89%E8%A3%85%E4%B8%8E%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%93%8D%E4%BD%9C%E4%B8%8E%E9%97%AE%E9%A2%98/" target="_self">
+          Docker build中的常见错误及常用命令(未完)
+        </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2022/06/24/Docker%E5%AE%89%E8%A3%85%E4%B8%8E%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%93%8D%E4%BD%9C%E4%B8%8E%E9%97%AE%E9%A2%98/">
-          
-          
-            
-          
-          Docker安装和从docker file build网上应该有教程，这里记录一下我自己在安装pymarl所遇到的一些问题及一些常用命令。目前只写了一点点，后续会继续在这篇博文之中添加。
-一. 常用命令   docker删除镜像：
-
-删除容器
-12345docker ps #查看正在运行的容器docker ps -a #查看所有容器docker rm container_id #删除容器
-删除镜像
-        </a>
-      </p>
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/06/24/Docker%E5%AE%89%E8%A3%85%E4%B8%8E%E8%BF%90%E8%A1%8C%E8%BF%87%E7%A8%8B%E4%B8%AD%E7%9A%84%E4%B8%80%E4%BA%9B%E6%93%8D%E4%BD%9C%E4%B8%8E%E9%97%AE%E9%A2%98/" target="_self">
+        <div>
+          Docker安装和从docker file build网上应该有教程，这里记录一下我自己在安装pymarl所遇到的一些问题及一些常用命令。目前只写了一点点，后续会继续在这篇博文之中添加。 一. 常用命令   docker删除镜像：  删除容器 12345docker ps #查看正在运行的容器docker ps -a #查看所有容器docker rm container_id #删除容器 删除镜像
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -387,22 +475,41 @@ Linux
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
-            
-              <a href="/categories/%E6%95%99%E7%A8%8B/Docker%E4%BD%BF%E7%94%A8/">Docker使用</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%95%99%E7%A8%8B/" class="category-chain-item">教程</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%95%99%E7%A8%8B/Docker%E4%BD%BF%E7%94%A8/" class="category-chain-item">Docker使用</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/Linux/">Linux</a>
+              <a href="/tags/Linux/">#Linux</a>
             
-              <a href="/tags/Docker/">Docker</a>
+              <a href="/tags/Docker/">#Docker</a>
             
           </div>
         
@@ -416,20 +523,17 @@ Linux
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/06/20/PSRO%E7%AC%94%E8%AE%B0/">PSRO笔记</a>
+        <a href="/2022/06/20/PSRO%E7%AC%94%E8%AE%B0/" target="_self">
+          PSRO笔记
+        </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2022/06/20/PSRO%E7%AC%94%E8%AE%B0/">
-          
-          
-            
-          
-          PSRO这篇文章看了很久还是看不懂，慢慢做点笔记。
-最简单最传统的多智能体即为InRL，即为每个智能体分别独立训练，但是会遇到不稳定（non-stationary）及非马尔科夫（non-Markovian)。非马尔科夫性我的理解即为，上一轮训练收敛的策略与下一轮训练没有确定的相关性，这一点也跟不稳定相对应。在这种情况下，训练只会得到相互过拟合的智能体，没有办法获得泛化的能力。
-本文提出了一种独立学
-        </a>
-      </p>
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/06/20/PSRO%E7%AC%94%E8%AE%B0/" target="_self">
+        <div>
+          PSRO这篇文章看了很久还是看不懂，慢慢做点笔记。 最简单最传统的多智能体即为InRL，即为每个智能体分别独立训练，但是会遇到不稳定（non-stationary）及非马尔科夫（non-Markovian)。非马尔科夫性我的理解即为，上一轮训练收敛的策略与下一轮训练没有确定的相关性，这一点也跟不稳定相对应。在这种情况下，训练只会得到相互过拟合的智能体，没有办法获得泛化的能力。 本文提出了一种独立学
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -441,26 +545,45 @@ Linux
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
-            
-              <a href="/categories/%E7%AC%94%E8%AE%B0/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/">强化学习</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%AC%94%E8%AE%B0/" class="category-chain-item">笔记</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E7%AC%94%E8%AE%B0/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/" class="category-chain-item">强化学习</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/RL/">RL</a>
+              <a href="/tags/RL/">#RL</a>
             
-              <a href="/tags/ML/">ML</a>
+              <a href="/tags/ML/">#ML</a>
             
-              <a href="/tags/MARL/">MARL</a>
+              <a href="/tags/MARL/">#MARL</a>
             
-              <a href="/tags/PSRO/">PSRO</a>
+              <a href="/tags/PSRO/">#PSRO</a>
             
           </div>
         
@@ -474,19 +597,17 @@ Linux
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/04/22/%E5%8A%B3%E5%8A%A8%E8%8A%82%E9%9A%8F%E7%AC%94%E4%BA%8C%E9%9B%B6%E4%BA%8C%E4%BA%8C/">劳动节随笔二零二二</a>
+        <a href="/2022/04/22/%E5%8A%B3%E5%8A%A8%E8%8A%82%E9%9A%8F%E7%AC%94%E4%BA%8C%E9%9B%B6%E4%BA%8C%E4%BA%8C/" target="_self">
+          劳动节随笔二零二二
+        </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2022/04/22/%E5%8A%B3%E5%8A%A8%E8%8A%82%E9%9A%8F%E7%AC%94%E4%BA%8C%E9%9B%B6%E4%BA%8C%E4%BA%8C/">
-          
-          
-            
-          
-          一
-I’ve long been trapped in a circle of fighting against myself. Up till now, still I have no idea why things falled in such a rush. With no bravery to expose the trouble of myself, I swallowed the pi
-        </a>
-      </p>
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/04/22/%E5%8A%B3%E5%8A%A8%E8%8A%82%E9%9A%8F%E7%AC%94%E4%BA%8C%E9%9B%B6%E4%BA%8C%E4%BA%8C/" target="_self">
+        <div>
+          一 I’ve long been trapped in a circle of fighting against myself. Up till now, still I have no idea why things falled in such a rush. With no bravery to expose the trouble of myself, I swallowed the pi
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -498,20 +619,34 @@ I’ve long been trapped in a circle of fighting against myself. Up till now, st
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%9A%8F%E7%AC%94/" class="category-chain-item">随笔</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E5%8A%B3%E5%8A%A8%E8%8A%82/">劳动节</a>
+              <a href="/tags/%E5%8A%B3%E5%8A%A8%E8%8A%82/">#劳动节</a>
             
-              <a href="/tags/2022/">2022</a>
+              <a href="/tags/2022/">#2022</a>
             
           </div>
         
@@ -524,25 +659,24 @@ I’ve long been trapped in a circle of fighting against myself. Up till now, st
     
       <div class="col-12 col-md-4 m-auto index-img">
         <a href="/2021/04/04/%E5%85%B3%E4%BA%8E%E5%A5%B3%E6%9D%83%E7%9A%84%E4%B8%80%E7%82%B9%E7%9C%8B%E6%B3%95/" target="_self">
-          <img src="https://bn1305files.storage.live.com/y4mG1FM7XUH2-u40FSJ9dPvVlhYhyG7bV5FtrBhMAxUUrokKdlkpLdORSPfVchpNtIebmApDpM1GvAaCCjRIjmHs4090MEi4c-q3RCtS2aGunkOmZ3_NSFEu76kUHE2q4-aH0AP1ZO2NQBUiIIHyYgGcn9Zp5o53MuqTefDzrlr9RSjct0dnEzDO0ShDjhBLgpb?width=1024&height=1024&cropmode=none" srcset="/img/loading.gif" alt="关于女权的一点看法">
+          <img src="https://bn1305files.storage.live.com/y4mG1FM7XUH2-u40FSJ9dPvVlhYhyG7bV5FtrBhMAxUUrokKdlkpLdORSPfVchpNtIebmApDpM1GvAaCCjRIjmHs4090MEi4c-q3RCtS2aGunkOmZ3_NSFEu76kUHE2q4-aH0AP1ZO2NQBUiIIHyYgGcn9Zp5o53MuqTefDzrlr9RSjct0dnEzDO0ShDjhBLgpb?width=1024&amp;height=1024&amp;cropmode=none" srcset="/img/loading.gif" lazyload alt="关于女权的一点看法">
         </a>
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2021/04/04/%E5%85%B3%E4%BA%8E%E5%A5%B3%E6%9D%83%E7%9A%84%E4%B8%80%E7%82%B9%E7%9C%8B%E6%B3%95/">关于女权的一点看法</a>
+        <a href="/2021/04/04/%E5%85%B3%E4%BA%8E%E5%A5%B3%E6%9D%83%E7%9A%84%E4%B8%80%E7%82%B9%E7%9C%8B%E6%B3%95/" target="_self">
+          关于女权的一点看法
+        </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2021/04/04/%E5%85%B3%E4%BA%8E%E5%A5%B3%E6%9D%83%E7%9A%84%E4%B8%80%E7%82%B9%E7%9C%8B%E6%B3%95/">
-          
-          
-            
-          
+      
+      <a class="index-excerpt " href="/2021/04/04/%E5%85%B3%E4%BA%8E%E5%A5%B3%E6%9D%83%E7%9A%84%E4%B8%80%E7%82%B9%E7%9C%8B%E6%B3%95/" target="_self">
+        <div>
           关于女权的讨论，于我而言应该是要翻篇了，就像之前的种种思潮，情绪过去后留下的便是垃圾时间，不管如何不眠不休，于问题本身是没有任何助益了。在公开平台发表过一些言论，为此也许颇伤了某一些女性网友的内心，使其知道在这个问题上性别始终是我们之间巨大的鸿沟。这也是我有意为之，我很感谢她们能够表达出自己内心的观点，而我也这么做，无非是在构筑一种景观，多提供一种角度，无论鄙夷，终究会有更全面的认识。以下算是一些
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -554,18 +688,32 @@ I’ve long been trapped in a circle of fighting against myself. Up till now, st
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E8%AF%84%E8%AE%BA/">评论</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%AF%84%E8%AE%BA/" class="category-chain-item">评论</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E5%A5%B3%E6%9D%83/">女权</a>
+              <a href="/tags/%E5%A5%B3%E6%9D%83/">#女权</a>
             
           </div>
         
@@ -579,18 +727,17 @@ I’ve long been trapped in a circle of fighting against myself. Up till now, st
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2021/03/01/%E5%85%B3%E4%BA%8E2021%E7%9A%84%E4%B8%80%E7%82%B9%E6%83%B3%E6%B3%95/">关于2021的一点想法</a>
+        <a href="/2021/03/01/%E5%85%B3%E4%BA%8E2021%E7%9A%84%E4%B8%80%E7%82%B9%E6%83%B3%E6%B3%95/" target="_self">
+          关于2021的一点想法
+        </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2021/03/01/%E5%85%B3%E4%BA%8E2021%E7%9A%84%E4%B8%80%E7%82%B9%E6%83%B3%E6%B3%95/">
-          
-          
-            
-          
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2021/03/01/%E5%85%B3%E4%BA%8E2021%E7%9A%84%E4%B8%80%E7%82%B9%E6%83%B3%E6%B3%95/" target="_self">
+        <div>
           也算是已经工作了近五个月，现在来谈一谈自己的感想。实际上我对于这份工作还是感激的成分比较多，因为彼时的我仍然处于抑郁的状态，行动力极其有限。有这么一个机会能够脱离家庭环境进入社会环境，对我来说算是一个小小的转折 。不过显然，如果当初去了体制内，或许结果会更加的不同。总而言之，在这短短的5个月里，似乎是看西洋景一般，体验到了很多新奇的经历，证明了自己总算是还没有退化，可以承担一些任务。
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -602,22 +749,36 @@ I’ve long been trapped in a circle of fighting against myself. Up till now, st
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%9A%8F%E7%AC%94/" class="category-chain-item">随笔</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E6%96%B0%E5%B9%B4/">新年</a>
+              <a href="/tags/%E6%96%B0%E5%B9%B4/">#新年</a>
             
-              <a href="/tags/%E8%92%B2%E8%8D%89%E9%9B%86/">蒲草集</a>
+              <a href="/tags/%E8%92%B2%E8%8D%89%E9%9B%86/">#蒲草集</a>
             
-              <a href="/tags/%E8%AE%A1%E5%88%92/">计划</a>
+              <a href="/tags/%E8%AE%A1%E5%88%92/">#计划</a>
             
           </div>
         
@@ -630,26 +791,24 @@ I’ve long been trapped in a circle of fighting against myself. Up till now, st
     
       <div class="col-12 col-md-4 m-auto index-img">
         <a href="/2021/02/19/%E5%9B%9E%E4%B9%A1%E5%81%B6%E8%AE%B0/" target="_self">
-          <img src="https://bn1305files.storage.live.com/y4moFi-OOrVJlACO5wnrqTKtQpbJTZz_ObhwiwDnyRSKa-6OemiWGoYkvzaRe8B2-kMw0fI4YFOV1ADunVWuLXSj8foYvVK7B2HX8eoK1RxyjLu2ySbKhbwaFY9gogDG2XEJKTjdsUJtLrStvqnqXc3yTK1JU3jje4mhz_UpnrnQE6xzE-5crYkhwNjxYWvwNtF?width=1024&height=768&cropmode=none" srcset="/img/loading.gif" alt="回乡偶记">
+          <img src="https://bn1305files.storage.live.com/y4moFi-OOrVJlACO5wnrqTKtQpbJTZz_ObhwiwDnyRSKa-6OemiWGoYkvzaRe8B2-kMw0fI4YFOV1ADunVWuLXSj8foYvVK7B2HX8eoK1RxyjLu2ySbKhbwaFY9gogDG2XEJKTjdsUJtLrStvqnqXc3yTK1JU3jje4mhz_UpnrnQE6xzE-5crYkhwNjxYWvwNtF?width=1024&amp;height=768&amp;cropmode=none" srcset="/img/loading.gif" lazyload alt="回乡偶记">
         </a>
       </div>
     
     <article class="col-12 col-md-8 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2021/02/19/%E5%9B%9E%E4%B9%A1%E5%81%B6%E8%AE%B0/">回乡偶记</a>
+        <a href="/2021/02/19/%E5%9B%9E%E4%B9%A1%E5%81%B6%E8%AE%B0/" target="_self">
+          回乡偶记
+        </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2021/02/19/%E5%9B%9E%E4%B9%A1%E5%81%B6%E8%AE%B0/">
-          
-          
-            
-          
-          （一）故乡也无非是这样。几般琐事，各自凉薄。独自在街道上夜游了很久，过公园大门而折返，又去看郎川。新年里灯光晦暗，流水汩汩。这里从前定有夜渔的人。我甚至能够想象，旧年的正月，人们正是在此游船互访，星月点点，这河运码头连着老街，送往迎来，喧嚣异常。
-有一段时间想去翻建平史料，也在油管看到日本兵进城的段落。山川风物，历史典故，相较桑梓，我所知也绝不为少。然而说不清楚，道不分明。我并不知悉这里的十万家灯
-        </a>
-      </p>
+      
+      <a class="index-excerpt " href="/2021/02/19/%E5%9B%9E%E4%B9%A1%E5%81%B6%E8%AE%B0/" target="_self">
+        <div>
+          （一）故乡也无非是这样。几般琐事，各自凉薄。独自在街道上夜游了很久，过公园大门而折返，又去看郎川。新年里灯光晦暗，流水汩汩。这里从前定有夜渔的人。我甚至能够想象，旧年的正月，人们正是在此游船互访，星月点点，这河运码头连着老街，送往迎来，喧嚣异常。 有一段时间想去翻建平史料，也在油管看到日本兵进城的段落。山川风物，历史典故，相较桑梓，我所知也绝不为少。然而说不清楚，道不分明。我并不知悉这里的十万家灯
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -661,20 +820,34 @@ I’ve long been trapped in a circle of fighting against myself. Up till now, st
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E9%9A%8F%E7%AC%94/" class="category-chain-item">随笔</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/%E6%96%B0%E5%B9%B4/">新年</a>
+              <a href="/tags/%E6%96%B0%E5%B9%B4/">#新年</a>
             
-              <a href="/tags/%E8%92%B2%E8%8D%89%E9%9B%86/">蒲草集</a>
+              <a href="/tags/%E8%92%B2%E8%8D%89%E9%9B%86/">#蒲草集</a>
             
           </div>
         
@@ -688,18 +861,17 @@ I’ve long been trapped in a circle of fighting against myself. Up till now, st
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2021/02/07/WSL%E5%AE%89%E8%A3%85%E5%8F%8A%E7%94%A8miniconda%E5%88%9B%E5%BB%BApython3-7%E7%8E%AF%E5%A2%83/">WSL安装及用miniconda创建python3.7环境</a>
+        <a href="/2021/02/07/WSL%E5%AE%89%E8%A3%85%E5%8F%8A%E7%94%A8miniconda%E5%88%9B%E5%BB%BApython3-7%E7%8E%AF%E5%A2%83/" target="_self">
+          WSL安装及用miniconda创建python3.7环境
+        </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/2021/02/07/WSL%E5%AE%89%E8%A3%85%E5%8F%8A%E7%94%A8miniconda%E5%88%9B%E5%BB%BApython3-7%E7%8E%AF%E5%A2%83/">
-          
-          
-            
-          
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2021/02/07/WSL%E5%AE%89%E8%A3%85%E5%8F%8A%E7%94%A8miniconda%E5%88%9B%E5%BB%BApython3-7%E7%8E%AF%E5%A2%83/" target="_self">
+        <div>
           WSL在windows上的确相当的鸡肋，但是假若没有配置服务器，WSL配合VSCode，也可以充当生产力工具。比较大的bug是，WSL的文件与NTFS的文件系统并不同步，可能是创建了多个缓存，因此需要不断地Reload来更新。如果有服务器资源或者Linux桌面版，那么配合VSCode远程开发工具就已经很香了。以下是WSL的安装教程。
-        </a>
-      </p>
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -711,22 +883,41 @@ I’ve long been trapped in a circle of fighting against myself. Up till now, st
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
-            
-              <a href="/categories/%E6%95%99%E7%A8%8B/Linux%E4%BD%BF%E7%94%A8/">Linux使用</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%95%99%E7%A8%8B/" class="category-chain-item">教程</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%95%99%E7%A8%8B/Linux%E4%BD%BF%E7%94%A8/" class="category-chain-item">Linux使用</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/WSL/">WSL</a>
+              <a href="/tags/WSL/">#WSL</a>
             
-              <a href="/tags/Linux/">Linux</a>
+              <a href="/tags/Linux/">#Linux</a>
             
           </div>
         
@@ -738,15 +929,9 @@ I’ve long been trapped in a circle of fighting against myself. Up till now, st
 
   <nav aria-label="navigation">
     <span class="pagination" id="pagination">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="iconfont icon-arrowright"></i></a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/#board">2</a><a class="extend next" rel="next" href="/page/2/#board"><i class="iconfont icon-arrowright"></i></a>
     </span>
   </nav>
-  
-  <script>
-    for (ele of document.getElementById("pagination").getElementsByTagName("a")) {
-      ele.href += '#board';
-    }
-  </script>
 
 
 
@@ -758,7 +943,7 @@ I’ve long been trapped in a circle of fighting against myself. Up till now, st
     
 
     
-      <a id="scroll-top-button" href="#" role="button">
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
         <i class="iconfont icon-arrowup" aria-hidden="true"></i>
       </a>
     
@@ -777,56 +962,59 @@ I’ve long been trapped in a circle of fighting against myself. Up till now, st
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">关键词</label>
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
     </div>
   </div>
 </div>
+
     
 
     
   </main>
 
-  <footer class="text-center mt-5 py-3">
-  <div class="footer-content">
-     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
-  </div>
+  <footer>
+    <div class="footer-inner">
   
-  <div class="statistics">
-    
-    
-
-    
-      
-        <!-- 不蒜子统计PV -->
-        <span id="busuanzi_container_site_pv" style="display: none">
-            总访问量 
-            <span id="busuanzi_value_site_pv"></span>
-             次
-          </span>
-      
-      
-        <!-- 不蒜子统计UV -->
-        <span id="busuanzi_container_site_uv" style="display: none">
-            总访客数 
-            <span id="busuanzi_value_site_uv"></span>
-             人
-          </span>
-      
-    
-  </div>
-
-
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
   
 
   
-</footer>
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
 
-<!-- SCRIPTS -->
+  
+  
+  
+</div>
 
+  </footer>
+
+  <!-- Scripts -->
+  
   <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
 
@@ -841,81 +1029,52 @@ I’ve long been trapped in a circle of fighting against myself. Up till now, st
 
 <script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
 <script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
-<script  src="/js/debouncer.js" ></script>
 <script  src="/js/events.js" ></script>
 <script  src="/js/plugins.js" ></script>
-
-<!-- Plugins -->
-
-
-  
-    <script  src="/js/lazyload.js" ></script>
-  
-
-
-
-  
-
-
-
-
-
-
-
-
-
-  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
-
-
-
-  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
-
-
 
 
   <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
   <script>
     (function (window, document) {
       var typing = Fluid.plugins.typing;
-      var title = document.getElementById('subtitle').title;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
       
-      typing(title)
+        typing(text);
       
     })(window, document);
   </script>
 
 
 
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
   <script  src="/js/local-search.js" ></script>
-  <script>
-    (function () {
-      var path = "/local-search.xml";
-      var inputArea = document.querySelector("#local-search-input");
-      inputArea.onclick = function () {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-        this.onclick = null
-      }
-    })()
-  </script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-<!-- 主题的启动项 保持在最底部 -->
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
 <script  src="/js/boot.js" ></script>
 
 
+  
 
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
 </body>
 </html>
