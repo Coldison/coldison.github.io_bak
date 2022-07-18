@@ -4,6 +4,39 @@
   
   
   <entry>
+    <title>python编译so和pyd文件</title>
+    <link href="/2022/07/18/python%E7%BC%96%E8%AF%91so%E5%92%8Cpyd%E6%96%87%E4%BB%B6/"/>
+    <url>/2022/07/18/python%E7%BC%96%E8%AF%91so%E5%92%8Cpyd%E6%96%87%E4%BB%B6/</url>
+    
+    <content type="html"><![CDATA[<p>python代码即便是编译成pyc也同样可以被反编译，通常为了产品发布跟代码保护，会编译成so(linux)或者pyd(windows)。</p><h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>主要流程是，先调用Cython包将python代码编译成c代码，再将c代码编译成so文件跟pyd文件。由于使用了gcc，所以需要安装对应的build工具。在windows平台可以通过Visual Studio Installer安装对应的包。</p><p><img src="https://by3302files.storage.live.com/y4mjOIpaxoglVNQtOuyJU2tGo30SMw22C61fR1HgyecUZf0la_8_eL8U8OKQzzNEggffhOxJa6SBBgy1YHwVjIFxzJJW6R1_d2N31XVSWR5BQPmwT7rwHN5hEHfuJ0G2FzDMTOB64tHaNuhqKKu1P_m3qayydJIqX-5TD4Ndr2jFtIrm85rxeL1xYuxo6Rid2si?width=1278&height=686&cropmode=none" alt="Visual Studio Installer 配置C环境"></p><p>Linux 需要自行配置下c++生成工具。</p><h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><p>参考git项目<a href="https://github.com/HamzaAissaoui/PythonCompilerC">PythonCompilerC</a>，一大部分工作在于对目录结构的处理，而这个项目本身生成的so/pyd文件全部在对应的build_path下，原有的目录结构消失。并且，由于不同平台的命令行格式不一样，导致编译的时候出了很多bug。对此做了一些修改，具体项目参见<a href="https://github.com/Coldison/PythonCompile2So">PythonCompileSo</a>。</p><p>将本项目放到要编译的项目的目录下。注意项目中的<strong>init</strong>.py文件需要删掉，这部分编译会出现字符错误。</p><p>Windows平台：</p><figure class="highlight cmd"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs cmd">python PROJECTPATH\scripts\compile.py --project-<span class="hljs-built_in">dir</span> PROJECTPATH --build-lib BUILDPATH<br></code></pre></div></td></tr></table></figure><p>Linux平台：</p><figure class="highlight bash"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs bash">python PROJECTPATH/scripts/compile.py --project-dir PROJECTPATH --build-lib BUILDPATH<br></code></pre></div></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>教程</category>
+      
+      <category>python使用</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>python</tag>
+      
+      <tag>编译</tag>
+      
+      <tag>so</tag>
+      
+      <tag>pyd</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>ArgParser的使用</title>
     <link href="/2022/07/13/ArgParser%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <url>/2022/07/13/ArgParser%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
