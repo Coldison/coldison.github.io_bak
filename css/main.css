@@ -1284,6 +1284,7 @@ i.iconfont {
 .markdown-body .highlight pre,
 .markdown-body pre {
   padding: 1.45rem 1rem;
+  margin-bottom: 16px;
 }
 .markdown-body pre code.hljs {
   padding: 0;
@@ -1293,6 +1294,7 @@ i.iconfont {
   padding-bottom: 1.45rem;
   padding-right: 1rem;
   line-height: 1.5;
+  margin-bottom: 16px;
 }
 .markdown-body .code-wrapper {
   position: relative;
