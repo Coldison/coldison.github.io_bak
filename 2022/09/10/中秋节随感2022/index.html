@@ -18,25 +18,19 @@
   <meta name="author" content="Coldison">
   <meta name="keywords" content="">
   
-    <meta name="description" content="看《Kubernates in Action》做一点笔记。 minikube文档基于minikube的kubernetes官方教程 容器容器技术是一种轻量级的虚拟化技术，在Linux架构中，可以通过命名空间跟用户组构建一个与主机相互隔离，占用指定计算资源的进程。在容器中一般可以不受影响地运行应用程序。 Kubernates 集群架构k8s简单来说就是对容器进行统一管理跟调度的软件工具。从架构上分为">
+    <meta name="description" content="（一）又是一年中秋，似乎每一逢节日就变得多愁善感起来。实际上我也好久不写随笔，因为虽然时时体验着某种持续的深沉的忧郁，但是也排不出严肃的思绪，去思考什么样的问题。 人的本身总是很难的，要五讲四美，有七情六欲。三尸斩不断，反而显化和粘连，于是对自己发出到底是凡人的感叹。 仙凡当然是有别的，虽然清静经里说，大道无情，于是载道的仙人们也就冷酷。但是民俗的仙人们大多也就象是畏畏缩缩的官僚，威于自己的职能，">
 <meta property="og:type" content="article">
-<meta property="og:title" content="k8s初探">
-<meta property="og:url" content="https://coldison.github.io/2022/08/15/k8s%E5%88%9D%E6%8E%A2/index.html">
+<meta property="og:title" content="中秋节随感">
+<meta property="og:url" content="https://coldison.github.io/2022/09/10/%E4%B8%AD%E7%A7%8B%E8%8A%82%E9%9A%8F%E6%84%9F2022/index.html">
 <meta property="og:site_name" content="凉快Coldison">
-<meta property="og:description" content="看《Kubernates in Action》做一点笔记。 minikube文档基于minikube的kubernetes官方教程 容器容器技术是一种轻量级的虚拟化技术，在Linux架构中，可以通过命名空间跟用户组构建一个与主机相互隔离，占用指定计算资源的进程。在容器中一般可以不受影响地运行应用程序。 Kubernates 集群架构k8s简单来说就是对容器进行统一管理跟调度的软件工具。从架构上分为">
+<meta property="og:description" content="（一）又是一年中秋，似乎每一逢节日就变得多愁善感起来。实际上我也好久不写随笔，因为虽然时时体验着某种持续的深沉的忧郁，但是也排不出严肃的思绪，去思考什么样的问题。 人的本身总是很难的，要五讲四美，有七情六欲。三尸斩不断，反而显化和粘连，于是对自己发出到底是凡人的感叹。 仙凡当然是有别的，虽然清静经里说，大道无情，于是载道的仙人们也就冷酷。但是民俗的仙人们大多也就象是畏畏缩缩的官僚，威于自己的职能，">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBa3A3T0FGTWxmRUtoNWRjU1ZjMGRRaEhmam1pUmc_ZT16NUJBU3I.png">
-<meta property="og:image" content="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBa3A3T0FGTWxmRUtoNWRZbDVFcWU1eEg2LWp3dGc_ZT01MmNwRXA.png">
-<meta property="article:published_time" content="2022-08-15T06:03:26.000Z">
-<meta property="article:modified_time" content="2022-08-29T06:58:44.724Z">
+<meta property="article:published_time" content="2022-09-10T14:54:54.000Z">
+<meta property="article:modified_time" content="2022-09-10T16:37:27.368Z">
 <meta property="article:author" content="Coldison">
-<meta property="article:tag" content="linux">
-<meta property="article:tag" content="kubernates">
-<meta property="article:tag" content="k8s">
-<meta property="article:tag" content="docker">
-<meta property="article:tag" content="容器">
+<meta property="article:tag" content="2022">
+<meta property="article:tag" content="中秋">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBa3A3T0FGTWxmRUtoNWRjU1ZjMGRRaEhmam1pUmc_ZT16NUJBU3I.png">
 <meta name="twitter:creator" content="@Coldison">
 <meta name="twitter:site" content="coldison.github.io">
   
@@ -44,7 +38,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>k8s初探 - 凉快Coldison</title>
+  <title>中秋节随感 - 凉快Coldison</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -221,7 +215,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="k8s初探"></span>
+            <span id="subtitle" data-typed-text="中秋节随感"></span>
           
         </div>
 
@@ -232,8 +226,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-08-15 14:03" pubdate>
-          2022年8月15日 下午
+        <time datetime="2022-09-10 22:54" pubdate>
+          2022年9月10日 晚上
         </time>
       </span>
     
@@ -244,7 +238,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.8k 字
+          1.7k 字
         
       </span>
     
@@ -255,7 +249,7 @@
         
         
         
-          24 分钟
+          15 分钟
         
       </span>
     
@@ -301,12 +295,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">k8s初探</h1>
+            <h1 style="display: none">中秋节随感</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：12 天前
+                    本文最后更新于：几秒前
                   
                 
               </p>
@@ -314,59 +308,19 @@
             
               <div class="markdown-body">
                 
-                <p>看<a target="_blank" rel="noopener" href="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL2IvcyFBa3A3T0FGTWxmRUtoNWRVS1ZUaWhIMjZsVGxUTXc_ZT03VWlzemw.pdf">《Kubernates in Action》</a>做一点笔记。</p>
-<p><a target="_blank" rel="noopener" href="https://minikube.sigs.k8s.io/docs/">minikube文档</a><br><a target="_blank" rel="noopener" href="https://kubernetes.io/zh-cn/docs/tutorials/kubernetes-basics/">基于minikube的kubernetes官方教程</a></p>
-<h3 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h3><p>容器技术是一种轻量级的虚拟化技术，在Linux架构中，可以通过命名空间跟用户组构建一个与主机相互隔离，占用指定计算资源的进程。在容器中一般可以不受影响地运行应用程序。<br><img src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBa3A3T0FGTWxmRUtoNWRjU1ZjMGRRaEhmam1pUmc_ZT16NUJBU3I.png" srcset="/img/loading2.gif" lazyload alt="虚拟机与容器"></p>
-<h3 id="Kubernates-集群架构"><a href="#Kubernates-集群架构" class="headerlink" title="Kubernates 集群架构"></a>Kubernates 集群架构</h3><p>k8s简单来说就是对容器进行统一管理跟调度的软件工具。从架构上分为两部分：</p>
-<p><img src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBa3A3T0FGTWxmRUtoNWRZbDVFcWU1eEg2LWp3dGc_ZT01MmNwRXA.png" srcset="/img/loading2.gif" lazyload alt="k8s集群架构"></p>
-<h3 id="k8s对容器的管理"><a href="#k8s对容器的管理" class="headerlink" title="k8s对容器的管理"></a>k8s对容器的管理</h3><ol>
-<li>根据应用的描述信息将对应数量的容器或者容器集合</li>
-<li>k8s可以根据负载自动决定一个应用程序的最佳副本数量，自动调整副本数。</li>
-<li>（pod）调度到工作节点上，工作节点上的Kubelets将告知Docker从镜像仓库中拉取容器镜像并且运行容器。</li>
-<li>k8s会不断地确认应用程序的部署状态始终与描述相匹配。如果其中一个进程崩溃，k8s会自动重新部署该进程。如果整个工作节点都死亡或者无法访问，则k8s会在新节点上部署故障节点中运行的所有容器并且运行。</li>
-<li>kube-proxy可以为相同的服务配置一个静态ip地址，这样不管容器如何移动或者增减，都可以通过该ip地址访问该服务。还可以确保服务的链接可以跨提供服务的容器实现负载均衡。</li>
-</ol>
-<h3 id="docker基础命令"><a href="#docker基础命令" class="headerlink" title="docker基础命令"></a>docker基础命令</h3><p>docker使用主要三部分：</p>
-<pre><code class=" mermaid">graph LR
-A[docker]--&gt;B[docker image]--&gt;C[docker container]
-</code></pre>
-<p>其中container是最后运行的容器实例，而image是容器本身的镜像文件，通过镜像可以build容器实例。docker本身则是对镜像和容器进行管理。以下是一些命令：</p>
-<ul>
-<li><p>构建容器镜像：<code>docker build -t IMAGE DOCKERFILEPATH</code>，使用DOCKERFILEPATH下的dockerfile文件构建名叫kubia的镜像。</p>
-</li>
-<li><p>显示镜像列表：<code>docker images</code>。</p>
-</li>
-<li><p>删除某一镜像：<code>docker rmi IMAGE</code>。</p>
-</li>
-<li><p>运行容器镜像并绑定端口：<code>docker run --name CONTAINER -p PORT:PORT -d IMAGE</code>。</p>
-</li>
-<li><p>获取容器信息：<code>docker ps</code>，<code>docker inspect CONTAINER</code>会有更详细的信息。</p>
-</li>
-<li><p>运行容器shell：<code>docker exec -it kubia-container bash</code>，前提是镜像本身包含了bash shell，<code>-i</code>保证标准输入流开放，<code>-t</code>分配一个伪终端，两个选项在一起才能正常运行bash。</p>
-</li>
-<li><p>开启/重启容器：<code>docker start CONTAINER</code>/<code>docker restart CONTAINER</code>。</p>
-</li>
-<li><p>停止容器：<code>docker stop CONTAINER</code>。</p>
-</li>
-<li><p>删除容器: <code>docker rm CONTAINER</code>。</p>
-</li>
-<li><p>为镜像添加标签：<code>docker tag IMAGE NEWTAG</code>，标签即为镜像的别名。</p>
-</li>
-<li><p>推送镜像到docker hub：<code>docker push TAG</code>。</p>
-</li>
-</ul>
-<h3 id="安装Minikube"><a href="#安装Minikube" class="headerlink" title="安装Minikube"></a>安装Minikube</h3><p>minikube是用于构建本地单节点集群的工具，主要用于测试k8s和本地开发应用。配置多节点或者云平台生产环境需要使用更多的k8s集群需要参考<a target="_blank" rel="noopener" href="https://kubernetes.io/">https://kubernetes.io/</a>。</p>
-<p>最新版本的minikube集成了kvm/virtualbox的底座，所以不需要额外安装vm。</p>
-<p>下载并安装最新版本的minikube：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 &amp;&amp; chmod +x minikube<br>sudo mkdir -p /usr/<span class="hljs-built_in">local</span>/bin/ <br>sudo install minikube /usr/<span class="hljs-built_in">local</span>/bin/<br></code></pre></td></tr></table></figure>
-<p>然后运行<code>minikube start --kubernetes-version=1.23.8</code>，最新版本的kubernetes会报错，所以这里最好指定kubernetes的镜像版本。如果提示docker版本过低请自行重装一下最新版本的docker。 运行成功会出现：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">* Done! kubectl is now configured to use &quot;minikube&quot; cluster and &quot;default&quot; namespace by d<br></code></pre></td></tr></table></figure>
-<p>要与kubernetes进行交互，还需要kubectl，注意需要安装对应版本的kubectl，否则会出现兼容性问题。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">curl -LO https://dl.k8s.io/release/v1.23.8/bin/linux/amd64/kubectl<br>sudo install -o root -g root -m 0755 kubectl /usr/<span class="hljs-built_in">local</span>/bin/kubectl<br></code></pre></td></tr></table></figure>
-<p>然后运行<code>kubectl version</code>，会出现client与server的版本信息。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">Client Version: version.Info&#123;Major:&quot;1&quot;, Minor:&quot;23&quot;, GitVersion:&quot;v1.23.8&quot;, GitCommit:&quot;a12b886b1da059e0190c54d09c5eab5219dd7acf&quot;, GitTreeState:&quot;clean&quot;, BuildDate:&quot;2022-06-16T05:57:43Z&quot;, GoVersion:&quot;go1.17.11&quot;, Compiler:&quot;gc&quot;, Platform:&quot;linux/amd64&quot;&#125;<br>Server Version: version.Info&#123;Major:&quot;1&quot;, Minor:&quot;23&quot;, GitVersion:&quot;v1.23.8&quot;, GitCommit:&quot;a12b886b1da059e0190c54d09c5eab5219dd7acf&quot;, GitTreeState:&quot;clean&quot;, BuildDate:&quot;2022-06-16T05:51:36Z&quot;, GoVersion:&quot;go1.17.11&quot;, Compiler:&quot;gc&quot;, Platform:&quot;linux/amd64&quot;&#125;<br></code></pre></td></tr></table></figure>
-<p>运行<code>kubectl cluster-info</code>查看集群信息。</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">Kubernetes control plane is running at https://192.168.49.2:8443<br>CoreDNS is running at https://192.168.49.2:8443/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy<br></code></pre></td></tr></table></figure>
+                <h3 id="（一）"><a href="#（一）" class="headerlink" title="（一）"></a>（一）</h3><p>又是一年中秋，似乎每一逢节日就变得多愁善感起来。实际上我也好久不写随笔，因为虽然时时体验着某种持续的深沉的忧郁，但是也排不出严肃的思绪，去思考什么样的问题。</p>
+<p>人的本身总是很难的，要五讲四美，有七情六欲。三尸斩不断，反而显化和粘连，于是对自己发出到底是凡人的感叹。</p>
+<p>仙凡当然是有别的，虽然清静经里说，大道无情，于是载道的仙人们也就冷酷。但是民俗的仙人们大多也就象是畏畏缩缩的官僚，威于自己的职能，此外便也就是蝇营狗苟，人情世故。所以也未必是仙。</p>
+<p>另外一种是，生活状态的不同，也或者说是一种统治的需要。这一点上我们喜欢的，一种近乎于莫名其妙的故事，但是，通俗点说，就是封建桎梏的悲剧，便就是杨二郎，清源妙道真君。玉帝不喜欢自己的妹妹与凡人结合，因此将其镇压在华山之下。“天上一日，地上三年”，又是因为天庭礼法的约束，故而当属大逆不道。杨戬长大成人，便要开山救母，此名曰孝，后面又在天庭当差，忠孝于是两全了。沉香救母，也是同样的一种循环，只不过大恶人变成了二郎真君自己，最后又是一团和气。封神演义中话，杨戬是玉鼎真人的徒弟，练得有八九玄功，是横练的肉体，一身气力，耍三尖两刃枪，作为阐教的第三代弟子，相顾伐纣，足智多谋，战功赫赫，所以成圣称神。我当然看的是洪荒流小说，把两段统一起来，但是化到现代，可能也无非就是一段今日说法的故事。但是可以想见，救母的时候是仙凡有别，但是真君肉身成圣，也是凡人作仙，可见第一段时仙途断绝，天庭冗员。</p>
+<p>有一类神我倒是很感兴趣，就是所谓的星君。在道门里，乃是天人感应所生，紫薇，太白，二十八宿，不知凡几。大抵凡有一颗亮星，便有一名神祇。道众们为这些人安排了各种各样的工作，有的在天庭当差，有的保命，有的护身，有的度厄，福禄寿，文曲武曲，也是星神。仿佛是基于一种逻辑上的推演，大多数星君们神通一般，所司之事也是玄之又玄，于是信众们似乎也仅仅止于上香祈福。道门中人倒是会用符箓来敕请这些大人，借用一些微不足道的神力，来斩妖除魔，解忧度厄。所以总体上，这些神也好像是无所事事，存在便就是一种神性。多数也没有固定的形象，有些如概念上的秉性特殊，或者朱雀白虎之类的，有图腾方位的神力。水浒中的天罡地煞，也仅仅是称号罢了，也是星神本身就是抽象虚无。但是也正因为此，星神们似乎是最具神性的，一种不依托与人本身的存在，或者说，当你知道他们是神仙的时候，他们便就是神仙了。其本真自性，便就是神，也就是大道的一点显化。</p>
+<h3 id="（二）"><a href="#（二）" class="headerlink" title="（二）"></a>（二）</h3><p>仙，当然是可以修的。修仙的网络文学和道教的基础是差不多的，那就是天人感应的学说，外在的天地和内在的天地可以对应沟通。凡有一百零八，二百十六处窍穴，一一打通，便可以感应天地，出阳神，成为一种不朽的，玄之又玄的存在。为此，需要锻炼筋骨，强健肉身，还需冥想修行，打磨精神和道心。再有炼丹采药，道法神通。因为设定严丝合缝，所以才有各种异彩纷呈的作品。</p>
+<p>还有一个有趣的地方在于，修仙固然是与大道相通，但是同样也是与大道排斥的。所以修仙者进阶就会有天劫。和九九八十一难这种混资历不同，天劫似乎也是感应而生，以雷罚为主，跟天庭的雷池概念相通，显其凌厉。但是多数情况下又是无因无果，渡劫者要么立有进境，要么身死道消。唯一得出的结论是，虽是大道无情，但是其却是有限的，所以大道越是在己，天道越是不喜。所谓大道三千，也是很多网文的设定。</p>
+<h3 id="（三）"><a href="#（三）" class="headerlink" title="（三）"></a>（三）</h3><p>我自己倒是构思过很多类似的桥段。仙道渺渺，仙途难寻。</p>
+<p>大约是隋唐时，彼时终南山便就是方士名流养望之所在。长安的小伙计，在攒了一些资材之后，决意去山中求仙。</p>
+<p>庙宇香火不断，寻访几处，小伙计便有一种直觉，那就是所谓的世外高人们大多也时空谈之辈，仪典本身也并不能跟仙人沟通。所以去野观中修行，道长透露因缘际会得到一本册子，倒是会一些小法术，但是不得其门，也不想献宝，如今也就收徒传典。寿元将近，师徒二人决定出海寻仙。从长安出发，一路向东至秦皇求仙处。</p>
+<p>一路艰难险阻，师父逝于海上。最终小伙计在海中遇见了蜃气所化之妖。虽然名妖，但是却是感应而生，善于化形。小伙计堪破红尘，见到了蜃本身，其却是避世有时，也属先天生灵，并不知晓什么仙人。于是二人一块上路……</p>
+<p>大约是这样的一种故事。</p>
+
                 
               </div>
             
@@ -384,15 +338,8 @@ A[docker]--&gt;B[docker image]--&gt;C[docker container]
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%95%99%E7%A8%8B/" class="category-chain-item">教程</a>
+  <a href="/categories/%E9%9A%8F%E7%AC%94/" class="category-chain-item">随笔</a>
   
-  
-    <span>></span>
-    
-  <a href="/categories/%E6%95%99%E7%A8%8B/%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97/" class="category-chain-item">分布式计算</a>
-  
-  
-
   
 
       </span>
@@ -406,15 +353,9 @@ A[docker]--&gt;B[docker image]--&gt;C[docker container]
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/linux/">#linux</a>
+        <a href="/tags/2022/">#2022</a>
       
-        <a href="/tags/kubernates/">#kubernates</a>
-      
-        <a href="/tags/k8s/">#k8s</a>
-      
-        <a href="/tags/docker/">#docker</a>
-      
-        <a href="/tags/%E5%AE%B9%E5%99%A8/">#容器</a>
+        <a href="/tags/%E4%B8%AD%E7%A7%8B/">#中秋</a>
       
     </div>
   
@@ -426,8 +367,8 @@ A[docker]--&gt;B[docker image]--&gt;C[docker container]
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>k8s初探</div>
-      <div>https://coldison.github.io/2022/08/15/k8s初探/</div>
+      <div>中秋节随感</div>
+      <div>https://coldison.github.io/2022/09/10/中秋节随感2022/</div>
     </div>
     <div class="license-meta">
       
@@ -439,13 +380,13 @@ A[docker]--&gt;B[docker image]--&gt;C[docker container]
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年8月15日</div>
+          <div>2022年9月10日</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2022年8月29日</div>
+          <div>2022年9月11日</div>
         </div>
       
       
@@ -476,18 +417,12 @@ A[docker]--&gt;B[docker image]--&gt;C[docker container]
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/08/19/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2fauxpilot/" title="本地部署fauxpilot">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">本地部署fauxpilot</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/07/27/python%E7%9A%84%E4%BD%BF%E7%94%A8%E7%B4%A2%E5%BC%95/" title="python的使用索引">
-                        <span class="hidden-mobile">python的使用索引</span>
+                      <a href="/2022/08/19/%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2fauxpilot/" title="本地部署fauxpilot">
+                        <span class="hidden-mobile">本地部署fauxpilot</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
