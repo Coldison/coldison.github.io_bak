@@ -29,7 +29,7 @@
 <meta property="og:image" content="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBa3A3T0FGTWxmRUtoOUV3NUFtYWliZTluUk5zTEE_ZT10WlNuN1M.png">
 <meta property="og:image" content="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBa3A3T0FGTWxmRUtoOUY1eXQzakRWdlFvRXpDWmc_ZT1McHY0WUY.png">
 <meta property="article:published_time" content="2022-09-15T06:08:12.263Z">
-<meta property="article:modified_time" content="2022-09-21T06:56:55.152Z">
+<meta property="article:modified_time" content="2022-09-21T07:07:50.489Z">
 <meta property="article:author" content="Coldison">
 <meta property="article:tag" content="docker">
 <meta property="article:tag" content="容器">
@@ -242,7 +242,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          7.5k 字
+          7.4k 字
         
       </span>
     
@@ -253,7 +253,7 @@
         
         
         
-          63 分钟
+          62 分钟
         
       </span>
     
@@ -304,7 +304,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：1 分钟前
+                    本文最后更新于：9 分钟前
                   
                 
               </p>
@@ -330,7 +330,13 @@
 <h3 id="根据镜像创建容器"><a href="#根据镜像创建容器" class="headerlink" title="根据镜像创建容器"></a>根据镜像创建容器</h3><p>现在有了镜像我们可以根据镜像创建容器。可以查看官方文档：<a target="_blank" rel="noopener" href="https://docs.docker.com/engine/reference/run/">docker run reference</a>。</p>
 <p>基础的<code>docker run</code>命令有如下的形式：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]<br></code></pre></td></tr></table></figure>
-<p>镜像的开发者可以决定镜像的default设置：<br>    + 前台还是后台运行<br>    + 容器识别<br>    + 网络设置<br>    + 运行时的约束如CPU和内存</p>
+<p>镜像的开发者可以决定镜像的default设置：</p>
+<ul>
+<li>前台还是后台运行</li>
+<li>容器识别</li>
+<li>网络设置</li>
+<li>运行时的约束如CPU和内存</li>
+</ul>
 <p><code>docker run</code>命令可以重写覆盖镜像的几乎所有缺省设置，这也是为什么这条命令比其他docker命令复杂的原因。</p>
 <h3 id="容器的命令和交互"><a href="#容器的命令和交互" class="headerlink" title="容器的命令和交互"></a>容器的命令和交互</h3><p>在detached的模式下，当<code>docker run</code>运行容器的进程结束时，容器也会进入exited的状态。如果再加上<code>-rm</code>命令，则<code>docker run</code>进程结束或者守护进程结束时就会进入exited状态。对于有些即时的服务，这条命令可以轻松实现服务结束container退出，然后简单销毁就可以了。</p>
 <p><img src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBa3A3T0FGTWxmRUtoOUV3NUFtYWliZTluUk5zTEE_ZT10WlNuN1M.png" srcset="/img/loading2.gif" lazyload alt="docker run -d"></p>
@@ -507,7 +513,30 @@
 </tbody></table>
 <p>不同的模式还有一些细节，这里不再赘述。</p>
 <h4 id="Restart-policies-–restart"><a href="#Restart-policies-–restart" class="headerlink" title="Restart policies (–restart)"></a>Restart policies (–restart)</h4><p><code>--restart</code>命令用于指定容器在exit之后的重启策略，具体策略如下：</p>
-<p>|Policy|Result|<br>|no|Do not automatically restart the container when it exits. This is the default.|<br>|on-failure[:max-retries]|Restart only if the container exits with a non-zero exit status. Optionally, limit the number of restart retries the Docker daemon attempts.|<br>|always|Always restart the container regardless of the exit status. When you specify always, the Docker daemon will try to restart the container indefinitely. The container will also always start on daemon startup, regardless of the current state of the container.|<br>|unless-stopped|Always restart the container regardless of the exit status, including on daemon startup, except if the container was put into a stopped state before the Docker daemon was stopped.|</p>
+<table>
+<thead>
+<tr>
+<th align="left">Policy</th>
+<th align="left">Result</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">no</td>
+<td align="left">Do not automatically restart the container when it exits. This is the default.</td>
+</tr>
+<tr>
+<td align="left">on-failure[:max-retries]</td>
+<td align="left">Restart only if the container exits with a non-zero exit status. Optionally, limit the number of restart retries the Docker daemon attempts.</td>
+</tr>
+<tr>
+<td align="left">always</td>
+<td align="left">Always restart the container regardless of the exit status. When you specify always, the Docker daemon will try to restart the container indefinitely. The container will also always start on daemon startup, regardless of the current state of the container.</td>
+</tr>
+<tr>
+<td align="left">unless-stopped</td>
+<td align="left">Always restart the container regardless of the exit status, including on daemon startup, except if the container was put into a stopped state before the Docker daemon was stopped.</td>
+</tr>
+</tbody></table>
 <p>在重启时，为了防止服务器过载，daemon会采取延时启动的方式，从100ms开始，不断double知道达到<code>on-failure</code>限制或者最大延时1min，或者<code>docker stop</code>或者<code>docker rm -f</code>。</p>
 <p>如果一个容器成功重启（也就是started并且成功运行至少10s），上述的时延会被重置为100ms。在<code>on-faliure</code>的模式下可以设置最大重启次数，默认是无限次。</p>
 <figure class="highlight docker"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs docker">docker <span class="hljs-keyword">run</span><span class="bash"> --restart=on-failure:10 redis</span><br></code></pre></td></tr></table></figure>
